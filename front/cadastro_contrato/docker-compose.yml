@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app  # Mapeia o diretório atual (.) para o diretório de trabalho dentro do contêiner
+      - /usr/src/app/node_modules  # Evita que o node_modules seja sobrescrito pelo volume
+    environment:
+      - CHOKIDAR_USEPOLLING=true  # Habilita o hot-reloading no Docker

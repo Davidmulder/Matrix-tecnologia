@@ -1,0 +1,47 @@
+.ccontrato-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;  /* Define a largura máxima do formulário */
+    margin: 50px auto;  /* Centraliza o formulário horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adiciona sombra para destacar */
+}
+
+form div {
+    display: flex;
+    flex-direction: column;  /* Coloca o label acima dos inputs */
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 95%;  /* Os inputs ocupam a largura completa do contêiner */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;  /* Permite redimensionar verticalmente */
+    height: 100px;  /* Altura inicial do textarea */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;  /* Botão ocupa a largura completa */
+}
+
+button:hover {
+    background-color: #0056b3;
+}

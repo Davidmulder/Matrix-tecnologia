@@ -1,0 +1,22 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em 20em;
+    background-color: var(--branco);
+}
+
+.logo {
+    height: 90px;
+}
+
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+/* Se precisar, ajuste o botão do cadastro dentro do cabeçalho */
+.cabecalho button {
+    margin-left: auto;
+}
